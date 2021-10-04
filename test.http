@@ -1,0 +1,22 @@
+# @name registerUser
+POST http://localhost:3000/api/v1/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "emailAddress": "john@doe.com"
+}
+###
+
+@userId = {{registerUser.response.body.data.userId}}
+
+POST http://localhost:3000/api/v1/verify
+Content-Type: application/json
+
+{
+  "userId": "{{userId}}"
+}
+###
+
+GET http://localhost:3000/api/v1/history/{{userId}}
+###

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@xdave/nest-request-context": ["libs/nest-request-context/src"],
+      "@xdave/nest-request-context/*": ["libs/nest-request-context/src/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

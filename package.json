@@ -30,7 +30,7 @@
     "test:e2e": "jest --config ./apps/example/test/jest-e2e.json"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.x"
+    "@nestjs/common": "^9.x"
   },
   "dependencies": {},
   "devDependencies": {
